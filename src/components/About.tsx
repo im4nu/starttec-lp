@@ -22,13 +22,33 @@ export default function AboutSection() {
       <AboutCards />
 
       <div className="flex items-center w-full justify-center flex-col my-16">
-        <h2 className="title-gradient text-4xl font-semibold">
+        <h2 className="title-gradient text-4xl font-bold py-4">
           Criamos Soluções Completas!
         </h2>
 
-        <p className="title-gradient text-2xl">
-          Envio de email, Criação de eventos, Envio de mensagens
-        </p>
+        <div className="title-gradient flex flex-row flex-wrap gap-2">
+          <Image
+            src={"/icons/mail.svg"}
+            alt="Ícone de email"
+            width={24}
+            height={24}
+          />{" "}
+          <p className="text-2xl">Envio de email, </p>
+          <Image
+            src={"/icons/calendar.svg"}
+            alt="Ícone de email"
+            width={24}
+            height={24}
+          />{" "}
+          <p className="text-2xl">Criação de eventos, </p>
+          <Image
+            src={"/icons/whatsapp.svg"}
+            alt="Ícone de email"
+            width={24}
+            height={24}
+          />{" "}
+          <p className="text-2xl">Envio de mensagens</p>
+        </div>
 
         <div className="flex bg-[#0E1330] w-full h-[512px] flex-row items-center justify-center px-12 relative mt-16 rounded-xl border-gray-300">
           <div className="flex flex-col items-start justify-start z-20 gap-6 xl:gap-12">

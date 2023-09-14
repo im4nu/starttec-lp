@@ -55,7 +55,7 @@ export default function HeroSection() {
           <motion.li variants={item} key={2}>
             <Image
               alt="Ilustração de uma Dashboard"
-              src={"/icons/dashboard.svg"}
+              src={"/images/dashboard.svg"}
               width={800}
               height={500}
             />
