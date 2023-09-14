@@ -21,8 +21,8 @@ export default function Home() {
         <Image
           src={"/icons/blue-circle.svg"}
           alt="Círculo azul"
-          height={156}
-          width={190}
+          height={226}
+          width={274}
           className="absolute right-0 top-[630px] z-10 w-[730px] h-[730px]"
         />
 
