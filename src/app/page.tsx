@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex bg-[#060B27] relative w-screen items-center justify-center">
-      <div className="flex flex-col items-center justify-start w-[70%]">
+      <div className="flex flex-col items-center justify-start w-[70%] text-white">
         <Navbar />
 
         <HeroSection />
