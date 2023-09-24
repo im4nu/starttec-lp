@@ -19,7 +19,7 @@ export default function Motion({ children, key, direction }: Props) {
       ref={scrollRef}
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 1 }}
     >
       {children}
     </motion.div>

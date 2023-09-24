@@ -33,7 +33,7 @@ export default function HeroSection() {
       >
         <div className="flex flex-col items-center justify-center text-center mt-[180px] gap-[30px]">
           <motion.li variants={item} key={0}>
-            <h1 className="title-gradient text-6xl font-bold py-6">
+            <h1 className="title-gradient lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold py-6">
               Seja bem vindo(a) a StartTec Soluções
             </h1>
             <p className="text-gray-300">

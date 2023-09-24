@@ -41,12 +41,12 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="flex items-center w-full justify-center border-b border-gray-500 fixed h-[110px] bg-blur z-30">
+    <nav className="flex items-center w-full justify-center border-b border-gray-500 fixed h-[80px] bg-blur z-30">
       <div className="flex flex-row items-center justify-between w-[70%] max-w-7xl py-6">
         <Image
           src="/icons/logo.svg"
-          width={158}
-          height={64}
+          width={110}
+          height={44}
           alt="Logomarca StartTec"
         />
 
@@ -59,8 +59,8 @@ export default function Navbar() {
               <a
                 className={`font-semibold hover:text-white ease-in duration-500 ${
                   activeSection === item.href
-                    ? "text-white text-base"
-                    : "text-gray-400 text-sm"
+                    ? "text-white text-sm"
+                    : "text-gray-400 text-xs"
                 }`}
                 href={`#${item.href}`}
               >

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Motion from "../motion/Motion";
+import Motion from "./motion/Motion";
 
 const cardsData = [
   {
@@ -49,12 +49,12 @@ const cardsData = [
   },
 ];
 
-export default function AboutCards() {
+export default function CardsList() {
   return (
-    <div className="flex flex-row flex-wrap justify-between gap-6 xl:gap-12 mt-12">
+    <div className="flex flex-row flex-wrap justify-between mt-9">
       {cardsData.map((card) => (
         <Motion key={card.id} direction="left">
-          <motion.div className="flex flex-col gap-3 px-8 bg-[#0E1330] border-gray-300 text-white rounded-lg w-[400px] h-[255px] items-start justify-center duration-500 ease-in-out hover:scale-105 hover:cursor-pointer item">
+          <motion.div className="flex flex-col gap-3 my-3 px-8 bg-[#0E1330] border-gray-300 text-white rounded-lg lg:w-[352px] lg:h-[224px] items-start justify-center duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
             <Image
               src={card.icon}
               alt={`Ícone de ${card.title}`}
@@ -63,8 +63,8 @@ export default function AboutCards() {
               className="object-cover flex"
             />
 
-            <p className="font-semibold">{card.title}</p>
-            <p className="text-sm">{card.description}</p>
+            <p className="font-semibold text-sm lg:text-base">{card.title}</p>
+            <p className="text-xs lg:text-sm">{card.description}</p>
           </motion.div>
         </Motion>
       ))}

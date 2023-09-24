@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AboutCards from "./ui/AboutCards";
+import CardsList from "./CardsList";
 import Button from "./ui/Button";
 import Motion from "./motion/Motion";
 
@@ -10,7 +10,7 @@ export default function AboutSection() {
       className="flex flex-col items-center justify-center w-full my-16 z-20"
     >
       <div className="flex flex-row items-center justify-between gap-24">
-        <h2 className="title-gradient text-4xl font-bold w-2/4">
+        <h2 className="title-gradient lg:text-2xl 2xl:text-3xl font-bold w-2/4">
           Por que a StartTec é líder em desenvolvimento de softwares desde 2017?
         </h2>
         <p className="text-sm text-gray-300 w-1/4">
@@ -19,10 +19,10 @@ export default function AboutSection() {
         </p>
       </div>
 
-      <AboutCards />
+      <CardsList />
 
       <div className="flex items-center w-full justify-center flex-col my-16">
-        <h2 className="title-gradient text-4xl font-bold py-4">
+        <h2 className="title-gradient lg:text-3xl 2xl:text-4xl font-bold py-4">
           Criamos Soluções Completas!
         </h2>
 
@@ -50,10 +50,10 @@ export default function AboutSection() {
           <p className="text-2xl">Envio de mensagens</p>
         </div>
 
-        <div className="flex bg-[#0E1330] w-full h-[512px] flex-row items-center justify-center px-12 relative mt-16 rounded-xl border-gray-300">
+        <div className="flex bg-[#0E1330] w-full h-[512px] flex-row items-center justify-center px-12 relative mt-16 rounded-xl border border-gray-800">
           <div className="flex flex-col items-start justify-start z-20 gap-6 xl:gap-12">
-            <h3 className="font-semibold text-3xl">
-              Criamos soluções performáticas
+            <h3 className="font-semibold text-3xl title-gradient">
+              Soluções performáticas
             </h3>
             <p className="w-2/3 text-sm">
               Sites feitos por nós carregam dentro de milésimos de segundos!
@@ -92,8 +92,8 @@ export default function AboutSection() {
           />
         </div>
 
-        <div className="flex flex-row items-center justify-between w-full my-12">
-          <div className="flex flex-col items-center py-12 relative bg-[#0E1330] w-[35%] rounded-xl border-gray-300 px-12 gap-8 h-[570px]">
+        <div className="flex flex-row items-center justify-between w-full my-12 ">
+          <div className="flex flex-col items-center py-12 border border-gray-800 relative bg-[#0E1330] w-[35%] rounded-xl px-12 gap-8 h-[570px]">
             <Motion direction="top" key={101}>
               <Image
                 src={"/images/methodus-print.svg"}
@@ -103,7 +103,7 @@ export default function AboutSection() {
               />
             </Motion>
 
-            <h2 className="text-3xl font-semibold w-full text-start">
+            <h2 className="text-3xl title-gradient font-semibold w-full text-start">
               Aplicativos android e ios
             </h2>
             <p className="text-sm w-full text-start">
@@ -128,8 +128,8 @@ export default function AboutSection() {
             />
           </div>
 
-          <div className="flex flex-col items-center pt-12 relative bg-[#0E1330] w-[60%] rounded-xl border-gray-300 px-12 gap-4 h-[570px]">
-            <h2 className="text-3xl font-semibold w-full text-start">
+          <div className="flex flex-col items-center pt-12 border border-gray-800 relative bg-[#0E1330] w-[60%] rounded-xl px-12 gap-4 h-[570px]">
+            <h2 className="text-3xl title-gradient font-semibold w-full text-start">
               Criação, Hospedagem e Manutenção
             </h2>
             <p className="text-sm w-full text-start">
@@ -163,7 +163,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="flex flex-row items-center justify-center gap-12">
+        <div className="flex flex-row items-center justify-center gap-12 ">
           <Button variant="contained" size="large">
             Visitar algumas de nossa soluções
           </Button>
@@ -177,6 +177,87 @@ export default function AboutSection() {
             />
           </Button>
         </div>
+      </div>
+
+      <div className="flex items-center w-full justify-center flex-col relative rounded-xl gap-20 border border-gray-800 px-12 pt-24">
+        <div className="flex flex-row items-center justify-between gap-12 h-[400px]">
+          <div className="flex flex-col items-start justify-start w-1/2 gap-4 h-full">
+            <h2 className="title-gradient lg:text-3xl 2xl:text-4xl font-bold py-4">
+              Transparência e Usabilidade
+            </h2>
+            <p className="text-gray-300">
+              Sabemos que usuários contentes são o melhor marketing e é por isso
+              que a nossa equipe de desenvolvimento e Design de Produto andam
+              lado a lado utilizando as melhores tecnologias do mercado e boas
+              práticas. Para que você tenha o melhor produto sempre.{" "}
+              <span className="font-bold">
+                Bonito, Rápido e Fácil de usar sempre!
+              </span>
+            </p>
+
+            <Button variant="outlined">
+              <p>Ver tecnologias utilizadas</p>
+            </Button>
+          </div>
+
+          <Image
+            alt="Imaged de código fonte"
+            src={"/images/code.svg"}
+            width={527}
+            height={400}
+            className="w-1/2"
+          />
+        </div>
+
+        <div className="flex flex-row justify-between w-full items-start">
+          <div className="flex flex-col items-center w-[45%] max-w-[550px] h-fit min-h-[330px] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
+            <h3 className="title-gradient w-full text-start lg:text-xl 2xl:text-2xl font-bold py-4">
+              Reuniões de alinhamento
+            </h3>
+            <p className="text-gray-300 w-full text-start">
+              Semanalmente ou diariamente são feitas reuniões com nossos
+              clientes para avançar cada vez mais o nosso projeto
+            </p>
+            <Image
+              alt="Ilustração de envio de email"
+              src={"/images/send-mail.svg"}
+              width={417}
+              height={211}
+            />
+          </div>
+
+          <div className="flex flex-col items-center w-[45%] max-w-[550px] h-fit min-h-[330px] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
+            <h3 className="title-gradient w-full text-start lg:text-xl 2xl:text-2xl font-bold py-4">
+              Design de produto
+            </h3>
+            <p className="text-gray-300 w-full text-start ">
+              A StartTec preza pela facilidade do usuário em usar um produto.
+              Experiência do usuário para nós é algo primordial!
+            </p>
+            <Image
+              alt="Ilustração de design de produto"
+              src={"/images/product-design.svg"}
+              width={487}
+              height={211}
+            />
+          </div>
+        </div>
+
+        <Image
+          src={"/icons/purple-circle.svg"}
+          alt="Ciruculo roxo"
+          width={300}
+          height={300}
+          className="absolute left-0 top-0 z-10"
+        />
+
+        <Image
+          src={"/icons/blue-circle.svg"}
+          alt="Ciruculo azul"
+          width={300}
+          height={300}
+          className="absolute right-0 bottom-0 z-10"
+        />
       </div>
     </section>
   );
