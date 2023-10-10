@@ -56,7 +56,7 @@ export default function Home() {
                   className="rounded-2xl border border-gray-600 bg-transparent text-white pl-2 py-1"
                 />
 
-                <Button variant="contained" size="medium">
+                <Button variant="contained" size="large">
                   Enviar
                 </Button>
               </form>

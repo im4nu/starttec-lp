@@ -7,7 +7,7 @@ const data = [
       "Ramet consectetur. Est porttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit urna.",
     image: "/images/stDoctor.svg",
     launchDate: "8 de fev 2018",
-    link: "/item-1",
+    link: "https://st-doctor-lp.vercel.app/",
     id: 0,
   },
   {

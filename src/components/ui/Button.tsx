@@ -9,7 +9,7 @@ interface ButtonProps {
 export default function Button({ size, variant, children }: ButtonProps) {
   return (
     <button
-      className={`flex items-center justify-center  rounded-[36px] text-white px-8 py-4 hover:opacity-75 hover:cursor-pointer ease-in-out duration-500 ${
+      className={`flex items-center justify-center rounded-[36px] text-white px-8 py-4 hover:scale-105 hover:cursor-pointer ease-linear duration-300 ${
         size === "small" ? "text-xs" : ""
       } ${size === "medium" ? "text-sm" : ""} ${
         size === "large" ? "text-base" : ""
