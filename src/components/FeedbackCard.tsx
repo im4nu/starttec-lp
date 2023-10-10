@@ -46,7 +46,7 @@ export default function FeedbackCard({
       </div>
 
       <Image
-        className="-mt-24"
+        className={`-mt-24 ${currentFeedback === index ? "animate-pulse" : ""}`}
         alt="Background"
         src={"/icons/feedbackCardBg.svg"}
         width={392}
