@@ -1,4 +1,5 @@
 import AboutSection from "@/components/About";
+import FeedbackSection from "@/components/Feedback";
 import HeroSection from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -27,6 +28,8 @@ export default function Home() {
         />
 
         <AboutSection />
+
+        <FeedbackSection />
       </div>
     </main>
   );

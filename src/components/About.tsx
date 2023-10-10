@@ -209,8 +209,8 @@ export default function AboutSection() {
           />
         </div>
 
-        <div className="flex flex-row justify-between w-full items-start">
-          <div className="flex flex-col items-center w-[45%] max-w-[550px] h-fit min-h-[330px] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
+        <div className="flex flex-row justify-between w-full items-start h-[400px]">
+          <div className="flex flex-col items-center w-[45%] h-[90%] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
             <h3 className="title-gradient w-full text-start lg:text-xl 2xl:text-2xl font-bold py-4">
               Reuniões de alinhamento
             </h3>
@@ -226,7 +226,7 @@ export default function AboutSection() {
             />
           </div>
 
-          <div className="flex flex-col items-center w-[45%] max-w-[550px] h-fit min-h-[330px] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
+          <div className="flex flex-col items-center w-[45%] h-[90%] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
             <h3 className="title-gradient w-full text-start lg:text-xl 2xl:text-2xl font-bold py-4">
               Design de produto
             </h3>
