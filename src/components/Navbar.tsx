@@ -20,7 +20,7 @@ export default function Navbar() {
       let currentSection = "";
 
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
+        const sectionTop = section.offsetTop - 600;
         const sectionBottom = sectionTop + section.offsetHeight;
 
         if (
