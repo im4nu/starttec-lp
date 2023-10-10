@@ -205,7 +205,7 @@ export default function AboutSection() {
             src={"/images/code.svg"}
             width={527}
             height={400}
-            className="w-1/2"
+            className="w-1/2 h-auto"
           />
         </div>
 

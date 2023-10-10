@@ -36,13 +36,13 @@ export default function FeedbackCard({
 
             <div className="flex flex-col">
               <h3>{name}</h3>
-              <p>{company}</p>
+              <p className="text-sm text-gray-300">{company}</p>
             </div>
           </div>
           <Image alt="Aspas" src={"/icons/quotes.svg"} width={60} height={40} />
         </div>
 
-        <p className="text-sm mt-4">{feedback}</p>
+        <p className="text-xs mt-4 text-gray-300">{feedback}</p>
       </div>
 
       <Image

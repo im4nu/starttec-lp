@@ -6,25 +6,25 @@ import { useState } from "react";
 
 const data = [
   {
-    name: "Ericleiton Silva",
+    name: "Cristina Rocha",
     image: "/images/avatar-1.png",
     company: "Google",
     feedback:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ni",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
   },
   {
     name: "João Pedro",
     image: "/images/avatar-2.png",
     company: "Amazon",
     feedback:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ni",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
   },
   {
     name: "Pedro Henrique",
     image: "/images/avatar.png",
     company: "Meta",
     feedback:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ni",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
   },
 ];
 

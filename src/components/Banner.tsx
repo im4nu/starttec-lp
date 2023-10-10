@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <div className="flex flex-col items-center justify-center py-12 w-4/5 gap-6 mt-20 rounded-xl border-gray-600 relative bg-neutral-600">
+    <div className="flex flex-col items-center justify-center py-12 w-4/5 gap-6 min-h-[400px] mt-20 rounded-xl border-gray-600 relative bg-neutral-600 px-12">
       <div className="flex flex-row items-center gap-12 z-20">
         <Image
           alt="Ícone do linkedin"
@@ -55,17 +55,17 @@ export default function Banner() {
       <Image
         src={"/icons/blue-circle.svg"}
         alt="Ciruculo azul"
-        width={100}
-        height={100}
-        className="absolute left-0 top-0 object-cover w-full h-full"
+        width={250}
+        height={250}
+        className="absolute right-0 top-0 object-cover"
       />
 
       <Image
         src={"/icons/purple-circle.svg"}
         alt="Ciruculo roxo"
-        width={100}
-        height={100}
-        className="absolute right-0 top-0 object-cover w-full h-full"
+        width={250}
+        height={250}
+        className="absolute left-0 top-0 object-cover"
       />
     </div>
   );

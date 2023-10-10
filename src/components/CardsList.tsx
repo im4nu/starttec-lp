@@ -60,7 +60,7 @@ export default function CardsList() {
               alt={`Ícone de ${card.title}`}
               width={50}
               height={45}
-              className="object-cover flex"
+              className="object-cover"
             />
 
             <p className="font-semibold text-sm lg:text-base">{card.title}</p>
