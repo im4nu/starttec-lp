@@ -43,7 +43,7 @@ export default function ProductCard({
         </a>
       </div>
 
-      <Image
+      {/* <Image
         src={"/icons/blue-circle.svg"}
         alt="Ciruculo azul"
         width={100}
@@ -57,7 +57,7 @@ export default function ProductCard({
         width={100}
         height={100}
         className="absolute left-0 bottom-0 object-cover"
-      />
+      /> */}
     </div>
   );
 }
