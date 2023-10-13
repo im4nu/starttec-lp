@@ -30,7 +30,7 @@ export default function ProductCard({
 
       <div className="border border-gray-600 h-[1px] w-full z-20" />
 
-      <div className="flex flex-row justify-between items-center z-20">
+      <div className="flex flex-col md:flex-row gap-2 md:gap-0 justify-between items-center z-20">
         <p className="text-xs text-gray-300">Lançado em: {launchDate}</p>
         <a href={link} className="flex flex-row items-center gap-2">
           <p className="text-sm">Visitar</p>{" "}
@@ -42,22 +42,6 @@ export default function ProductCard({
           />
         </a>
       </div>
-
-      {/* <Image
-        src={"/icons/blue-circle.svg"}
-        alt="Ciruculo azul"
-        width={100}
-        height={100}
-        className="absolute right-0 top-0 object-cover z-10"
-      />
-
-      <Image
-        src={"/icons/purple-circle.svg"}
-        alt="Ciruculo roxo"
-        width={100}
-        height={100}
-        className="absolute left-0 bottom-0 object-cover"
-      /> */}
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function FeedbackCard({
 }: FeedbackCardProps) {
   return (
     <div
-      className={`flex flex-col w-[392px] items-center justify-center mt-20 ease-linear duration-300 ${
+      className={`flex flex-col w-[280px] md:w-[392px] items-center justify-center mt-20 ease-linear duration-300 ${
         currentFeedback === index ? "scale-110 mx-6" : ""
       }`}
     >
@@ -39,14 +39,22 @@ export default function FeedbackCard({
               <p className="text-sm text-gray-300">{company}</p>
             </div>
           </div>
-          <Image alt="Aspas" src={"/icons/quotes.svg"} width={60} height={40} />
+          <Image
+            alt="Aspas"
+            src={"/icons/quotes.svg"}
+            width={60}
+            height={40}
+            className="w-[42px] h-auto md:w-[60px]"
+          />
         </div>
 
         <p className="text-xs mt-4 text-gray-300">{feedback}</p>
       </div>
 
       <Image
-        className={`-mt-24 ${currentFeedback === index ? "animate-pulse" : ""}`}
+        className={`-mt-16 md:-mt-24 ${
+          currentFeedback === index ? "animate-pulse" : ""
+        }`}
         alt="Background"
         src={"/icons/feedbackCardBg.svg"}
         width={392}

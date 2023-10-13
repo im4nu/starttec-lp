@@ -36,8 +36,8 @@ export default function ProductsSection() {
       id="products"
       className="flex flex-col items-center justify-center mt-20 w-full"
     >
-      <div className="flex flex-row items-center justify-between gap-24 w-full">
-        <h2 className="title-gradient text-3xl lg:text-4xl 2xl:text-5xl font-bold">
+      <div className="flex flex-row items-center justify-between gap-6 md:gap-24 w-full">
+        <h2 className="title-gradient text-xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold">
           Confira alguns dos nossos produtos
         </h2>
         <a

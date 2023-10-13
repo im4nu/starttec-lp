@@ -18,7 +18,7 @@ export default function Banner() {
         />
       </div>
 
-      <h2 className="title-gradient lg:text-2xl 2xl:text-3xl font-bold text-center z-20">
+      <h2 className="title-gradient text-2xl 2xl:text-3xl font-bold text-center z-20">
         Siga-nos em nossas redes
       </h2>
 
@@ -29,16 +29,16 @@ export default function Banner() {
         perto!
       </p>
 
-      <div className="flex flex-row items-center gap-8 z-20">
+      <div className="flex flex-row items-center gap-3 md:gap-8 z-20">
         <a
           href="#"
-          className="px-8 py-3 bg-[#0078D4] rounded-3xl hover:scale-105 hover:cursor-pointer ease-linear duration-300"
+          className="px-4 md:px-8 py-3 text-sm md:text-base bg-[#0078D4] rounded-3xl hover:scale-105 hover:cursor-pointer ease-linear duration-300"
         >
           Linkedin
         </a>
         <a
           href="#"
-          className="px-8 py-3 bg-[#EA4969] rounded-3xl hover:scale-105 hover:cursor-pointer ease-linear duration-300"
+          className="px-4 md:px-8 py-3 text-sm md:text-base bg-[#EA4969] rounded-3xl hover:scale-105 hover:cursor-pointer ease-linear duration-300"
         >
           Instagram
         </a>
@@ -49,7 +49,7 @@ export default function Banner() {
         src={"/images/bannerBg.svg"}
         width={800}
         height={800}
-        className="absolute top-0 left-0 w-full h-full object-cover animate-pulse"
+        className="hidden md:flex absolute top-0 left-0 w-full h-full object-cover animate-pulse"
       />
 
       <Image
