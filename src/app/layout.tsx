@@ -8,8 +8,10 @@ export const metadata: Metadata = {
   title: "StartTec | Soluções em Tecnologia",
   description:
     "A líder no mercado de desenvolvimento de softwares a mais de 7 anos",
+  openGraph: {
+    images: ["/images/sitePreview.png"],
+  },
 };
-
 export default function RootLayout({
   children,
 }: {
