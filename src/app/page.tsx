@@ -95,7 +95,7 @@ export default function Home() {
 
           <div className="flex flex-row items-start justify-start w-full mb-6">
             <p className="text-xs">
-              Todos os direitos reservba © StartTec Soluções | Design por
+              Todos os direitos reservados © StartTec Soluções | Design por
               <a
                 className="underline ml-1"
                 href="https://www.linkedin.com/in/m4nu/"

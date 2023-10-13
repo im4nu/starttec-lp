@@ -33,20 +33,20 @@ export default function HeroSection() {
       >
         <div className="flex flex-col items-center justify-center text-center mt-[180px] gap-[30px]">
           <motion.li variants={item} key={0}>
-            <h1 className="title-gradient lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold py-6">
+            <h1 className="title-gradient text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold py-6">
               Seja bem vindo(a) a StartTec Soluções
             </h1>
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-sm md:text-base">
               Transformamos ideias em software de excelência
             </p>
           </motion.li>
 
           <motion.li variants={item} key={1}>
             <div className="flex flex-row items-center justify-center gap-12">
-              <Button size="medium" variant="contained">
+              <Button className="text-xs md:text-base" variant="contained">
                 Saber Mais
               </Button>
-              <Button size="medium" variant="outlined">
+              <Button className="text-xs md:text-base" variant="outlined">
                 Visitar Projetos
               </Button>
             </div>

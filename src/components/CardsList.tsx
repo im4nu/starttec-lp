@@ -51,10 +51,10 @@ const cardsData = [
 
 export default function CardsList() {
   return (
-    <div className="flex flex-row flex-wrap justify-between mt-9">
+    <div className="flex flex-row flex-wrap justify-center md:justify-between mt-9">
       {cardsData.map((card) => (
         <Motion key={card.id} direction="left">
-          <motion.div className="flex flex-col gap-3 my-3 px-8 bg-[#0E1330] border-gray-300 text-white rounded-lg lg:w-[352px] lg:h-[224px] items-start justify-center duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
+          <motion.div className="flex w-[250px] items-center text-center lg:text-start py-4 flex-col gap-3 my-3 px-8 bg-[#0E1330] border-gray-300 text-white rounded-lg lg:w-[352px] lg:h-[224px] lg:items-start justify-center duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
             <Image
               src={card.icon}
               alt={`Ícone de ${card.title}`}

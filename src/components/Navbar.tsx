@@ -13,7 +13,7 @@ const navData = [
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
-
+  const [mobileMenu, setMobileMenu] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section"); // Seleciona todas as seções
@@ -41,7 +41,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="flex items-center w-full justify-center border-b border-gray-500 fixed h-[80px] bg-blur z-30">
+    <nav className="flex flex-col lg:flex-row items-center w-full justify-center border-b border-gray-500 fixed lg:h-[80px] bg-blur z-30">
       <div className="flex flex-row items-center justify-between w-[70%] max-w-7xl py-6">
         <Image
           src="/icons/logo.svg"
@@ -50,7 +50,7 @@ export default function Navbar() {
           alt="Logomarca StartTec"
         />
 
-        <ul className="flex flex-row items-center justify-center gap-4">
+        <ul className="hidden lg:flex flex-row items-center justify-center gap-4">
           {navData.map((item) => (
             <li
               key={item.label}
@@ -78,10 +78,54 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <Button size="medium" variant="contained">
+        <Button className="hidden lg:flex" size="medium" variant="contained">
           Faça um teste
         </Button>
+
+        <button
+          onClick={() => setMobileMenu((current) => !current)}
+          className="flex lg:hidden flex-row items-center justify-center"
+        >
+          <Image
+            src={`/icons/${mobileMenu ? "close.svg" : "menu.svg"}`}
+            width={32}
+            height={32}
+            alt="Ícone de menu"
+          />
+        </button>
       </div>
+
+      <ul
+        className={`lg:hidden absolute bg-white flex-col w-full items-center justify-center gap-4 ease-linear duration-500 py-6 ${
+          mobileMenu ? "top-[92px] opacity-100" : "-top-[350px] opacity-0"
+        }`}
+      >
+        {navData.map((item) => (
+          <li
+            key={item.label}
+            className="flex flex-col items-center w-full justify-center ease-in duration-500 gap-2"
+          >
+            <a
+              className={`font-semibold ease-in w-full py-2 text-center duration-500 ${
+                activeSection === item.href
+                  ? "text-gray-800 text-sm"
+                  : "text-gray-500 text-xs"
+              }`}
+              href={`#${item.href}`}
+            >
+              {item.label}
+            </a>
+
+            <div
+              className={`${
+                activeSection === item.href
+                  ? "w-[45px] bg-white h-[1px]"
+                  : "w-[0px]"
+              } ease-in duration-500`}
+            />
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 }

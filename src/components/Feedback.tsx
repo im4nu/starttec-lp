@@ -49,16 +49,16 @@ export default function FeedbackSection() {
       id="feedback"
       className="flex flex-col items-center justify-center"
     >
-      <h2 className="title-gradient lg:text-4xl 2xl:text-5xl font-bold text-center">
+      <h2 className="title-gradient text-4xl 2xl:text-5xl font-bold text-center">
         O que os nossos clientes acham?
       </h2>
-      <p className="text-sm text-gray-300">
+      <p className="text-sm text-gray-300 mt-4">
         Veja alguns depoimentos feitos por clientes nos últimos meses!
       </p>
 
       <div
         className={`flex flex-row items-center justify-center gap-3 ease-linear duration-300 ${
-          currentFeedback === 0 ? "ml-[392px]" : ""
+          currentFeedback === 0 ? "ml-[calc(392px*2)] lg:ml-[392px]" : ""
         }
         ${currentFeedback === 1 ? "" : ""}
         ${currentFeedback === 2 ? "mr-[392px]" : ""}

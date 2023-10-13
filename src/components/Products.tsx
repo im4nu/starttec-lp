@@ -34,21 +34,21 @@ export default function ProductsSection() {
   return (
     <section
       id="products"
-      className="flex flex-col items-center justify-center mt-20"
+      className="flex flex-col items-center justify-center mt-20 w-full"
     >
       <div className="flex flex-row items-center justify-between gap-24 w-full">
-        <h2 className="title-gradient lg:text-4xl 2xl:text-5xl font-bold">
+        <h2 className="title-gradient text-3xl lg:text-4xl 2xl:text-5xl font-bold">
           Confira alguns dos nossos produtos
         </h2>
         <a
           href="#"
-          className="rounded-2xl bg-main px-4 py-2 text-sm hover:scale-105 hover:cursor-pointer ease-linear duration-300"
+          className="rounded-3xl bg-main py-4 text-sm hover:scale-105 hover:cursor-pointer ease-linear duration-300 w-[180px] text-center"
         >
           Ver todos
         </a>
       </div>
 
-      <div className="flex flex-row items-center justify-center gap-12 mt-6">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mt-6 w-full">
         {data.map((item) => (
           <ProductCard
             description={item.description}

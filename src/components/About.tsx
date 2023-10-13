@@ -9,11 +9,11 @@ export default function AboutSection() {
       id="about"
       className="flex flex-col items-center justify-center w-full my-16 z-20"
     >
-      <div className="flex flex-row items-center justify-between gap-24">
-        <h2 className="title-gradient lg:text-2xl 2xl:text-3xl font-bold w-2/4">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-24">
+        <h2 className="title-gradient md:text-2xl 2xl:text-3xl font-bold lg:w-2/4 lg:text-start text-center">
           Por que a StartTec é líder em desenvolvimento de softwares desde 2017?
         </h2>
-        <p className="text-sm text-gray-300 w-1/4">
+        <p className="lg:text-sm md:text-xs text-center text-gray-300 lg:w-1/4 lg:text-start">
           Entenda por que milhares de clientes decidem desenvolver projetos
           conosco e como chegamos tão longe!
         </p>
@@ -22,11 +22,11 @@ export default function AboutSection() {
       <CardsList />
 
       <div className="flex items-center w-full justify-center flex-col my-16">
-        <h2 className="title-gradient lg:text-3xl 2xl:text-4xl font-bold py-4">
+        <h2 className="title-gradient text-3xl 2xl:text-4xl font-bold py-4">
           Criamos Soluções Completas!
         </h2>
 
-        <div className="title-gradient flex flex-row flex-wrap gap-2">
+        <div className="title-gradient flex flex-row flex-wrap gap-2 justify-center">
           <Image
             src={"/icons/mail.svg"}
             alt="Ícone de email"
@@ -50,7 +50,7 @@ export default function AboutSection() {
           <p className="text-2xl">Envio de mensagens</p>
         </div>
 
-        <div className="flex bg-[#0E1330] w-full h-[512px] flex-row items-center justify-center px-12 relative mt-16 rounded-xl border border-gray-800">
+        <div className="flex flex-col bg-[#0E1330] w-full h-fit py-8 lg:py-0 lg:h-[512px] lg:flex-row items-center justify-center px-12 relative mt-16 rounded-xl border border-gray-800">
           <div className="flex flex-col items-start justify-start z-20 gap-6 xl:gap-12">
             <h3 className="font-semibold text-3xl title-gradient">
               Soluções performáticas
@@ -60,9 +60,6 @@ export default function AboutSection() {
               Sabemos a necessidade da rapidez nos dias de hoje e quão
               importante é para você ter uma página fluida, sem travamentos
             </p>
-            <Button variant="outlined" size="medium">
-              Saber mais
-            </Button>
           </div>
 
           <Motion direction="top" key={100}>
@@ -71,7 +68,7 @@ export default function AboutSection() {
               alt="Imagem de carregamento rápido"
               width={920}
               height={512}
-              className="z-20 object-cover"
+              className="z-20 mt-6 lg:mt-0 object-cover"
             />
           </Motion>
 
@@ -92,8 +89,8 @@ export default function AboutSection() {
           />
         </div>
 
-        <div className="flex flex-row items-center justify-between w-full my-12 ">
-          <div className="flex flex-col items-center py-12 border border-gray-800 relative bg-[#0E1330] w-[35%] rounded-xl px-12 gap-8 h-[570px]">
+        <div className="flex flex-col gap-12 lg:gap-0 lg:flex-row items-center justify-between w-full my-12 ">
+          <div className="flex w-full flex-col items-center py-12 border border-gray-800 relative bg-[#0E1330] lg:w-[35%] rounded-xl px-12 gap-8 h-[570px]">
             <Motion direction="top" key={101}>
               <Image
                 src={"/images/methodus-print.svg"}
@@ -128,7 +125,7 @@ export default function AboutSection() {
             />
           </div>
 
-          <div className="flex flex-col items-center pt-12 border border-gray-800 relative bg-[#0E1330] w-[60%] rounded-xl px-12 gap-4 h-[570px]">
+          <div className="flex w-full flex-col items-center pt-12 border border-gray-800 relative bg-[#0E1330] lg:w-[60%] rounded-xl px-12 gap-4 h-[570px]">
             <h2 className="text-3xl title-gradient font-semibold w-full text-start">
               Criação, Hospedagem e Manutenção
             </h2>
@@ -179,9 +176,9 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="flex items-center w-full justify-center flex-col relative rounded-xl gap-20 border border-gray-800 px-12 pt-24">
-        <div className="flex flex-row items-center justify-between gap-12 h-[400px]">
-          <div className="flex flex-col items-start justify-start w-1/2 gap-4 h-full">
+      <div className="flex h-fit items-center w-full justify-center flex-col relative rounded-xl gap-20 border border-gray-800 px-12 py-12 lg:pt-24 lg:py-0">
+        <div className="flex flex-col h-fit justify-center lg:flex-row items-center lg:justify-between gap-12 lg:h-[400px]">
+          <div className="flex w-full flex-col items-start justify-start lg:w-1/2 gap-4 h-full">
             <h2 className="title-gradient lg:text-3xl 2xl:text-4xl font-bold py-4">
               Transparência e Usabilidade
             </h2>
@@ -205,13 +202,13 @@ export default function AboutSection() {
             src={"/images/code.svg"}
             width={527}
             height={400}
-            className="w-1/2 h-auto"
+            className="w-full lg:w-1/2 h-auto"
           />
         </div>
 
-        <div className="flex flex-row justify-between w-full items-start h-[400px]">
-          <div className="flex flex-col items-center w-[45%] h-[90%] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
-            <h3 className="title-gradient w-full text-start lg:text-xl 2xl:text-2xl font-bold py-4">
+        <div className="flex h-fit flex-col lg:flex-row gap-12 lg:gap-0 justify-between w-full items-start lg:h-[400px]">
+          <div className="flex flex-col items-center w-full lg:w-[45%] h-fit py-6 lg:py-0 lg:h-[90%] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
+            <h3 className="title-gradient w-full text-start text-xl 2xl:text-2xl font-bold py-4">
               Reuniões de alinhamento
             </h3>
             <p className="text-gray-300 w-full text-start">
@@ -226,8 +223,8 @@ export default function AboutSection() {
             />
           </div>
 
-          <div className="flex flex-col items-center w-[45%] h-[90%] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
-            <h3 className="title-gradient w-full text-start lg:text-xl 2xl:text-2xl font-bold py-4">
+          <div className="flex flex-col items-center w-full lg:w-[45%] h-fit py-6 lg:py-0 lg:h-[90%] justify-center gap-4 px-8 pt-2 bg-black border border-gray-800 rounded-xl">
+            <h3 className="title-gradient w-full text-start text-xl 2xl:text-2xl font-bold py-4">
               Design de produto
             </h3>
             <p className="text-gray-300 w-full text-start ">
