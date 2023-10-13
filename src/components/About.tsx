@@ -62,7 +62,7 @@ export default function AboutSection() {
             </p>
           </div>
 
-          <Motion direction="top" key={100}>
+          <Motion direction="top" identifier={100}>
             <Image
               src={"/images/fast-loader.svg"}
               alt="Imagem de carregamento rápido"
@@ -91,7 +91,7 @@ export default function AboutSection() {
 
         <div className="flex flex-col gap-12 lg:gap-0 lg:flex-row items-center justify-between w-full my-12 ">
           <div className="flex w-full flex-col items-center py-12 border border-gray-800 relative bg-[#0E1330] lg:w-[35%] rounded-xl px-12 gap-8 h-[570px] text-center lg:text-start">
-            <Motion direction="top" key={101}>
+            <Motion direction="top" identifier={101}>
               <Image
                 src={"/images/methodus-print.svg"}
                 alt="Print da tela do app methodus"
@@ -133,7 +133,7 @@ export default function AboutSection() {
               Sim! Nós cuidamos de tudo para que você foque realmente no que
               importa, A sua ideia! Deixe a parte chata e complicada conosco!
             </p>
-            <Motion direction="top" key={102}>
+            <Motion direction="top" identifier={102}>
               <Image
                 src={"/images/folders.svg"}
                 alt="Pastas de arquivos"
@@ -197,14 +197,19 @@ export default function AboutSection() {
               <p>Ver tecnologias utilizadas</p>
             </Button>
           </div>
-
-          <Image
-            alt="Imaged de código fonte"
-            src={"/images/code.svg"}
-            width={527}
-            height={400}
-            className="w-full lg:w-1/2 h-auto"
-          />
+          <Motion
+            direction="top"
+            identifier={103}
+            className="w-full lg:w-1/2 h-full"
+          >
+            <Image
+              alt="Imaged de código fonte"
+              src={"/images/code.svg"}
+              width={527}
+              height={400}
+              className="w-full h-full"
+            />
+          </Motion>
         </div>
 
         <div className="flex h-fit flex-col lg:flex-row gap-12 lg:gap-0 justify-between w-full items-start lg:h-[400px]">
@@ -216,12 +221,14 @@ export default function AboutSection() {
               Semanalmente ou diariamente são feitas reuniões com nossos
               clientes para avançar cada vez mais o nosso projeto
             </p>
-            <Image
-              alt="Ilustração de envio de email"
-              src={"/images/send-mail.svg"}
-              width={417}
-              height={211}
-            />
+            <Motion direction="top" identifier={104}>
+              <Image
+                alt="Ilustração de envio de email"
+                src={"/images/send-mail.svg"}
+                width={417}
+                height={211}
+              />
+            </Motion>
           </div>
 
           <div className="flex flex-col items-center w-full lg:w-[45%] h-fit py-6 lg:py-0 lg:h-[90%] justify-center gap-4 px-8 pt-2 bg-black md:border border-gray-800 rounded-xl">
@@ -232,12 +239,14 @@ export default function AboutSection() {
               A StartTec preza pela facilidade do usuário em usar um produto.
               Experiência do usuário para nós é algo primordial!
             </p>
-            <Image
-              alt="Ilustração de design de produto"
-              src={"/images/product-design.svg"}
-              width={487}
-              height={211}
-            />
+            <Motion direction="top" identifier={105}>
+              <Image
+                alt="Ilustração de design de produto"
+                src={"/images/product-design.svg"}
+                width={487}
+                height={211}
+              />
+            </Motion>
           </div>
         </div>
 

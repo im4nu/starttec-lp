@@ -6,17 +6,24 @@ import { useRef } from "react";
 
 interface Props {
   children: React.ReactNode;
-  key: number;
+  identifier: number;
   direction: "top" | "left";
+  className?: string;
 }
 
-export default function Motion({ children, key, direction }: Props) {
+export default function Motion({
+  children,
+  className,
+  identifier,
+  direction,
+}: Props) {
   const scrollRef = useRef(null);
   return (
     <motion.div
       variants={direction === "left" ? RightToLeft : BotToTop}
-      key={key}
+      key={identifier}
       ref={scrollRef}
+      className={className ? className : ""}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 1 }}

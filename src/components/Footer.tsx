@@ -14,7 +14,7 @@ export default function Footer() {
           />
 
           <form className="flex flex-col rounded-xl border border-gray-600 bg-neutral-600 gap-4 px-8 py-4 w-[300px]">
-            <h2 className="text-sm md:text-base">
+            <h2 className="text-sm">
               Deixe o seu email, entramos em contato com você!
             </h2>
 

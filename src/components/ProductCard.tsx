@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Motion from "./motion/Motion";
 
 interface ProductCardProps {
   title: string;
@@ -6,6 +7,7 @@ interface ProductCardProps {
   image: string;
   launchDate: string;
   link: string;
+  identifier: number;
 }
 
 export default function ProductCard({
@@ -14,16 +16,19 @@ export default function ProductCard({
   launchDate,
   link,
   title,
+  identifier,
 }: ProductCardProps) {
   return (
     <div className="flex flex-col relative px-6 py-4 lg:text-start gap-4 lg:gap-0 h-fit text-center w-4/5 lg:w-[300px] lg:h-[400px] border border-gray-600 rounded-xl bg-neutral-600 justify-between items-center lg:items-start">
-      <Image
-        alt="Ilustração do produto St Doctor"
-        src={image}
-        width={342}
-        height={230}
-        className="z-20"
-      />
+      <Motion direction="left" identifier={identifier}>
+        <Image
+          alt="Ilustração do produto St Doctor"
+          src={image}
+          width={342}
+          height={230}
+          className="z-20"
+        />
+      </Motion>
 
       <h3 className="z-20 text-lg md:text-xl">{title}</h3>
       <p className="text-xs z-20 text-gray-300">{description}</p>

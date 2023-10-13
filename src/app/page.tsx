@@ -15,6 +15,16 @@ export default function Home() {
 
         <HeroSection />
 
+        <div className="flex w-full items-center justify-center mt-20">
+          <Image
+            alt="seta para baixo"
+            src={"/icons/arrow2.svg"}
+            height={32}
+            width={32}
+            className="animate-bounce"
+          />
+        </div>
+
         <Image
           src={"/icons/purple-circle.svg"}
           alt="Círculo roxo"

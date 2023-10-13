@@ -57,6 +57,7 @@ export default function ProductsSection() {
             link={item.link}
             title={item.title}
             key={item.id}
+            identifier={item.id}
           />
         ))}
       </div>
