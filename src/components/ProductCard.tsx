@@ -25,17 +25,17 @@ export default function ProductCard({
           alt="Ilustração do produto St Doctor"
           src={image}
           width={342}
-          height={230}
-          className="z-20"
+          height={180}
+          className="z-20 max-h-[180px] object-cover"
         />
       </Motion>
 
       <h3 className="z-20 text-lg md:text-xl">{title}</h3>
-      <p className="text-xs z-20 text-gray-300">{description}</p>
+      <p className="text-xs z-20 text-gray-300 capitalize">{description}</p>
 
       <div className="border border-gray-600 h-[1px] w-full z-20" />
 
-      <div className="flex flex-col md:flex-row gap-2 md:gap-0 justify-between items-center z-20">
+      <div className="flex flex-col md:flex-row gap-2 lg:gap-6 md:gap-0 justify-between items-center z-20">
         <p className="text-xs text-gray-300">Lançado em: {launchDate}</p>
         <a href={link} className="flex flex-row items-center gap-2">
           <p className="text-sm">Visitar</p>{" "}

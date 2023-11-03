@@ -4,7 +4,7 @@ const data = [
   {
     title: "StDoctor - Sistema de Gestão de Clínicas",
     description:
-      "Ramet consectetur. Est porttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit urna.",
+      "Cuidamos da sua clínica com excelência para que seu foco seja voltado para o que mais importa, a saúde dos seus pacientes.",
     image: "/images/stDoctor.svg",
     launchDate: "8 de fev 2018",
     link: "https://st-doctor-lp.vercel.app/",
@@ -12,20 +12,19 @@ const data = [
   },
   {
     title: "StartMessage - Sistema de envio de mensagens",
-    description:
-      "Ramet consectetur. Est porttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit urna.",
-    image: "/images/startMessage.svg",
+    description: "Sistema de disparo de mensagens automáticas.",
+    image: "/images/startmessage.png",
     launchDate: "8 de fev 2018",
-    link: "/item-2",
+    link: "https://www.startmessage.com.br/",
     id: 1,
   },
   {
-    title: "EventoSmart - Sistema de gestão de feiras e eventos",
+    title: "HubDpo - Gerenciamento de dados pessoais ",
     description:
-      "Ramet consectetur. Est porttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit urna.",
-    image: "/images/methodus.svg",
+      "Evite multas severas pela não adequação DA SUA ORGANIZAÇÃO À LGPD!",
+    image: "/images/hub-dpo.png",
     launchDate: "14 de set 2023",
-    link: "/item-3",
+    link: "https://www.hubdpo.com.br/",
     id: 2,
   },
 ];
@@ -37,7 +36,7 @@ export default function ProductsSection() {
       className="flex flex-col items-center justify-center mt-20 w-full"
     >
       <div className="flex flex-row items-center justify-between gap-6 md:gap-24 w-full">
-        <h2 className="title-gradient text-xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold">
+        <h2 className="title-gradient text-xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold lg:py-2">
           Confira alguns dos nossos produtos
         </h2>
         <a
