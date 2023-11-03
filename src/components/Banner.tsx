@@ -37,7 +37,7 @@ export default function Banner() {
           Linkedin
         </a> */}
         <a
-          href="#"
+          href="https://www.instagram.com/starttecsolucoes/"
           className="px-4 md:px-8 py-3 text-sm md:text-base bg-[#EA4969] rounded-3xl hover:scale-105 hover:cursor-pointer ease-linear duration-300"
         >
           Instagram
