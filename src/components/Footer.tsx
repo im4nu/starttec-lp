@@ -20,6 +20,7 @@ export default function Footer() {
 
             <input
               type="email"
+              placeholder="Digite o seu email"
               className="rounded-2xl border border-gray-600 bg-transparent text-white pl-2 py-1"
             />
 

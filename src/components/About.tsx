@@ -135,7 +135,7 @@ export default function AboutSection() {
             </p>
             <Motion direction="top" identifier={102}>
               <Image
-                src={"/images/folders.svg"}
+                src={"/images/ui-preview.svg"}
                 alt="Pastas de arquivos"
                 width={580}
                 height={390}

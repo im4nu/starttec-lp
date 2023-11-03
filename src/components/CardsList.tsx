@@ -17,14 +17,14 @@ const cardsData = [
     icon: "/icons/handshake.svg",
     title: "Análise de requisitos",
     description:
-      "Antes de iniciar qualquer projeto analisamos cuidadosamente a sua ideia e como podemos desenvolvê-la",
+      "Antes de iniciar qualquer projeto analisamos cuidadosamente a sua ideia e como podemos desenvolvê-la.",
   },
   {
     id: 2,
     icon: "/icons/connections.svg",
     title: "Conexões com clientes",
     description:
-      "Mais que apenas desenvolver a sua ideia, nós sempre queremos solucionar o seu problema! Sua satisfação é tudo para nós ",
+      "Mais que apenas desenvolver a sua ideia, nós sempre queremos solucionar o seu problema! Sua satisfação é tudo para nós.",
   },
   {
     id: 3,
@@ -38,14 +38,14 @@ const cardsData = [
     icon: "/icons/chat.svg",
     title: "Alinhamento de ideias",
     description:
-      " Contamos com um time de desenvolvimento e gestão de projeto que mantém contato com você do começo ao fim do projeto! Nunca fique com dúvidas",
+      " Contamos com um time de desenvolvimento e gestão de projeto que mantém contato com você do começo ao fim do projeto! Nunca fique com dúvidas.",
   },
   {
     id: 5,
     icon: "/icons/message.svg",
     title: "Entrega final do produto",
     description:
-      "Após o desenvolvimento entregamos o produto 100% funcional para você apenas compartilhar com seus clientes seu novo site, sistema ou app (Android e IOS)",
+      "Após o desenvolvimento entregamos o produto 100% funcional para você apenas compartilhar com seus clientes seu novo site, sistema ou app (Android e IOS).",
   },
 ];
 
