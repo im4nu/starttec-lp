@@ -67,6 +67,20 @@ export default function Home() {
         />
 
         <a
+          href={`http://wa.me/558198101171?text=${encodeURIComponent(
+            `Olá! Venho do site da StartTec e gostaria de fazer um orçamento.`
+          )}`}
+          className="fixed bottom-20 right-4 rounded-full p-4 bg-green-700 bg-blur z-30 animate-pulse"
+        >
+          <Image
+            alt="Whatsapp"
+            src={"icons/whats-white.svg"}
+            width={24}
+            height={24}
+          />
+        </a>
+
+        <a
           href="#home"
           className="fixed bottom-4 right-4 flex bg-black/70 bg-blur z-30 border border-gray-600 p-4 rounded-full"
         >
@@ -74,8 +88,8 @@ export default function Home() {
             alt="Voltar para o topo"
             src={"icons/right-arrow.svg"}
             className="-rotate-90"
-            width={18}
-            height={18}
+            width={24}
+            height={24}
           />
         </a>
       </div>
