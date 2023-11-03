@@ -21,7 +21,7 @@ export default function Home() {
             src={"/icons/arrow2.svg"}
             height={32}
             width={32}
-            className="animate-bounce"
+            className="animate-v-bounce"
           />
         </div>
 
