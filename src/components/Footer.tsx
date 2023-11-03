@@ -1,10 +1,18 @@
 import Image from "next/image";
 import Button from "./ui/Button";
 
-export default function Footer() {
+interface FooterProps {
+  onLadinginPage?: boolean;
+}
+
+export default function Footer({ onLadinginPage: onLadnginPage }: FooterProps) {
   return (
     <footer className="flex flex-col items-center justify-center w-full mt-20 gap-6">
-      <div className="flex flex-col md:flex-row items-center justify-between w-full xl:w-3/5">
+      <div
+        className={`flex flex-col md:flex-row items-center w-full xl:w-3/5 ${
+          onLadnginPage ? "justify-between" : "justify-center"
+        }`}
+      >
         <div className="flex flex-col gap-6">
           <Image
             alt="Logomarca StartTec"
@@ -30,7 +38,11 @@ export default function Footer() {
           </form>
         </div>
 
-        <div className="flex-col gap-2 hidden md:flex">
+        <div
+          className={`flex-col gap-2 hidden ${
+            onLadnginPage ? "md:flex" : "md:hidden"
+          }`}
+        >
           <h2 className="text-lg">Navegue</h2>
           <a
             className="text-sm hover:cursor-pointer hover:text-white text-gray-300 ease-linear duration-300"
@@ -61,7 +73,11 @@ export default function Footer() {
 
       <div className="flex border border-gray-600 h-[1px] w-full" />
 
-      <div className="flex flex-row items-start justify-start w-full mb-6">
+      <div
+        className={`flex flex-row items-start w-full mb-6 ${
+          onLadnginPage ? "justify-start" : "justify-center"
+        }`}
+      >
         <p className="text-xs text-center">
           Todos os direitos reservados © StartTec Soluções | Design por
           <a

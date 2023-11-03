@@ -35,7 +35,7 @@ export default function RootLayout({
         <meta property="twitter:image:alt" content="About Acme" />
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-[#060B27]`}>{children}</body>
     </html>
   );
 }

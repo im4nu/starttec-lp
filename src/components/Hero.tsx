@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Button from "./ui/Button";
 import { motion } from "framer-motion";
+import LinkDemo from "./ui/Link";
 
 export default function HeroSection() {
   const container = {
@@ -43,12 +44,20 @@ export default function HeroSection() {
 
           <motion.li variants={item} key={1}>
             <div className="flex flex-row items-center justify-center gap-4 md:gap-12">
-              <Button className="text-xs md:text-base" variant="contained">
+              <LinkDemo
+                link="#about"
+                className="text-xs md:text-base"
+                variant="contained"
+              >
                 Saber Mais
-              </Button>
-              <Button className="text-xs md:text-base" variant="outlined">
+              </LinkDemo>
+              <LinkDemo
+                link={"/products"}
+                className="text-xs md:text-base"
+                variant="outlined"
+              >
                 Visitar Projetos
-              </Button>
+              </LinkDemo>
             </div>
           </motion.li>
 

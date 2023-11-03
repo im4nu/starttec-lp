@@ -48,7 +48,7 @@ export default function Home() {
 
         <ProductsSection />
 
-        <Footer />
+        <Footer onLadinginPage />
 
         <Image
           src={"/icons/purple-circle.svg"}
