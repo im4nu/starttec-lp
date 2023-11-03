@@ -2,6 +2,7 @@ import Image from "next/image";
 import CardsList from "./CardsList";
 import Button from "./ui/Button";
 import Motion from "./motion/Motion";
+import LinkDemo from "./ui/Link";
 
 export default function AboutSection() {
   return (
@@ -162,11 +163,15 @@ export default function AboutSection() {
         </div>
 
         <div className="flex flex-row items-center justify-center gap-12 ">
-          <Button variant="contained" size="large">
+          <LinkDemo link={"/products"} variant="contained" size="large">
             Visitar algumas de nossa soluções
-          </Button>
+          </LinkDemo>
 
-          <Button variant="outlined" size="medium" className="hidden md:flex">
+          <Button
+            variant="outlined"
+            size="medium"
+            className="hidden md:flex hover:cursor-default animate-h-bounce"
+          >
             <Image
               alt="Seta para direita"
               src={"/icons/right-arrow.svg"}

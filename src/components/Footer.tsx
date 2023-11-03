@@ -32,7 +32,7 @@ export default function Footer({ onLadinginPage: onLadnginPage }: FooterProps) {
               className="rounded-2xl border border-gray-600 bg-transparent text-white pl-2 py-1"
             />
 
-            <Button variant="contained" size="large">
+            <Button variant="contained" size="large" className="animate-pulse">
               Enviar
             </Button>
           </form>
