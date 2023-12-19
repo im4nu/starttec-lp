@@ -3,6 +3,7 @@ import CardsList from "./CardsList";
 import Button from "./ui/Button";
 import Motion from "./motion/Motion";
 import LinkDemo from "./ui/Link";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -167,18 +168,20 @@ export default function AboutSection() {
             Visitar algumas de nossa soluções
           </LinkDemo>
 
-          <Button
-            variant="outlined"
-            size="medium"
-            className="hidden md:flex hover:cursor-default animate-h-bounce"
-          >
-            <Image
-              alt="Seta para direita"
-              src={"/icons/right-arrow.svg"}
-              width={24}
-              height={24}
-            />
-          </Button>
+          <Link href={"/products"}>
+            <Button
+              variant="outlined"
+              size="medium"
+              className="hidden md:flex hover:cursor-default animate-h-bounce"
+            >
+              <Image
+                alt="Seta para direita"
+                src={"/icons/right-arrow.svg"}
+                width={24}
+                height={24}
+              />
+            </Button>
+          </Link>
         </div>
       </div>
 
