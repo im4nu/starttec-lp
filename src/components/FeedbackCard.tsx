@@ -31,7 +31,7 @@ export default function FeedbackCard({
               src={image}
               width={40}
               height={40}
-              className="rounded-full object-cover"
+              className="rounded-full object-cover h-[40px] w-[40px]"
             />
 
             <div className="flex flex-col">

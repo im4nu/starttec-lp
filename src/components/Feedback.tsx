@@ -6,11 +6,11 @@ import { useState } from "react";
 
 const data = [
   {
-    name: "Cristina Rocha",
-    image: "/images/avatar-1.png",
-    company: "Google",
+    name: "Eduardo Beltrão",
+    image: "/icons/interne-logo.svg",
+    company: "Gerente de TI - Grupo Interne Soluções em Saúde",
     feedback:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "A parceria Starttec com o grupo Interne Soluções em Saúde teve início em 2021 e vem rendendo bons frutos, otimizando cada vez mais nossas entregas de desenvolvimento e promovendo uma rotina de testes mais robusta em nossos produtos. O time Starttec nos apoia com desenvolvimento nas linguagens Java, Angular, Node.js e muito mais que isso, com um excelente conhecimento de Gustavo Salgado CEO-Starttec na área da saúde e sensibilidade para entender as necessidades de seus clientes.",
   },
   {
     name: "João Pedro",
