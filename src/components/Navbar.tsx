@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "./ui/Button";
 import { useEffect, useState } from "react";
 import LinkDemo from "./ui/Link";
+import Link from "next/link";
 
 const navData = [
   { label: "Início", href: "home" },
@@ -79,16 +80,15 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <LinkDemo
-          link={`http://wa.me/558198101171?text=${encodeURIComponent(
+        <Link
+          href={`http://wa.me/558198101171?text=${encodeURIComponent(
             `Olá! Venho do site da StartTec e gostaria de fazer um orçamento.`
           )}`}
-          className="hidden lg:flex"
-          size="small"
-          variant="contained"
+          target="_blank"
+          className="flex items-center justify-center rounded-[36px] text-white px-8 py-4 hover:scale-105 hover:cursor-pointer ease-linear duration-300 text-xs bg-main"
         >
-          Faça um orçamento
-        </LinkDemo>
+          Fale conosco
+        </Link>
 
         <button
           onClick={() => setMobileMenu((current) => !current)}

@@ -8,23 +8,23 @@ const data = [
   {
     name: "Eduardo Beltrão",
     image: "/icons/interne-logo.svg",
-    company: "Gerente de TI - Grupo Interne Soluções em Saúde",
+    company: "Grupo Interne Soluções em Saúde",
     feedback:
       "A parceria Starttec com o grupo Interne Soluções em Saúde teve início em 2021 e vem rendendo bons frutos, otimizando cada vez mais nossas entregas de desenvolvimento e promovendo uma rotina de testes mais robusta em nossos produtos. O time Starttec nos apoia com desenvolvimento nas linguagens Java, Angular, Node.js e muito mais que isso, com um excelente conhecimento de Gustavo Salgado CEO-Starttec na área da saúde e sensibilidade para entender as necessidades de seus clientes.",
   },
   {
-    name: "João Pedro",
-    image: "/images/avatar-2.png",
-    company: "Amazon",
+    name: "Mila Moura",
+    image: "/images/mila.webp",
+    company: "Grupo W",
     feedback:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "Há muito tempo eu desejava levar o meu negócio para o ambiente on-line, mas não fazia ideia de como fazer isto até conhecer a StartTec! Hoje tenho uma plataforma com várias ferramentas que são fundamentais para minha empresa e tudo foi criado do zero pela StartTec para atender as demandas do meu público. Desde o projeto, até execução e suporte, em toda a trajetória de construção e implementação do projeto eu contei com o profissionalismo e atenção da empresa. E foi só o começo, em 2024 tenho planos de expandir o meu sistema on-line e me sinto segura pra fazer isto com a StartTec.",
   },
   {
-    name: "Pedro Henrique",
-    image: "/images/avatar.png",
-    company: "Meta",
+    name: "Dr. Julio",
+    image: "/images/Dr-julio.jpeg",
+    company: "Iducation",
     feedback:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "A StartTec superou todas as nossas expectativas no desenvolvimento de nosso software de treinamento e aprendizagem. Julio Abreu. CEO Iducation.",
   },
 ];
 
