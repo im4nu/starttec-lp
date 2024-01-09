@@ -82,7 +82,7 @@ export default function Footer({ onLadinginPage: onLadnginPage }: FooterProps) {
           Todos os direitos reservados © StartTec Soluções | Design por
           <a
             className="underline ml-1"
-            href="https://www.linkedin.com/in/m4nu/"
+            href="https://www.omanu.tech/"
             target="_blank"
           >
             Emmanuel Rodrigues
